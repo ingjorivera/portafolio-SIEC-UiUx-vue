@@ -1,0 +1,26 @@
+.ebsa-logo{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+.siec-logo{
+    position: absolute;
+    right: 80px;
+    top: 80px;
+    width: 270px;
+    opacity: .48;
+}
+.login-box{
+   
+    border-radius: 20px;
+    /* From https://css.glass */
+background: rgba(0, 0, 0, 0.4) !important;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3) !important;
+backdrop-filter: blur(4.2px) !important;
+-webkit-backdrop-filter: blur(4.2px) !important;
+border: 1px solid rgba(255, 255, 255, 0.21) impot !important;
+
+
+
+
+}

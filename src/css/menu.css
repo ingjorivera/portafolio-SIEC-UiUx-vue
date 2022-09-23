@@ -1,0 +1,14 @@
+.sidebar-menu{
+    background: transparent;
+    background-color: #40404066;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-right: .3px solid rgba(255, 255, 255, 0.2);
+    border-top: .3px solid rgba(255, 255, 255, 0.2);
+    border-bottom: .3px solid rgba(255, 255, 255, 0.2);
+}
+.q-drawer{
+    background: transparent !important;
+}

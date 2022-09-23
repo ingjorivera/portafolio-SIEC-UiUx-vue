@@ -1,0 +1,293 @@
+
+@import url('http://fonts.cdnfonts.com/css/mark-pro?styles=78509,78513,78515,78512,78516,78511,78514,78510');
+@import url('http://fonts.cdnfonts.com/css/gadugi?styles=66186,66187');
+
+/* Variables */
+
+:root{
+    --advertencia: #ff3434;
+    --exito: rgb(45, 124, 78);
+    --primario: #ffc629;
+    --negro: #000000;
+    --gris: #a09fa1;
+    --gris-claro: #e4dde4;
+    --amarillo-palido: #f4ddae;
+    --gris-oscuro:#313131;
+    --gris-oscuro-claro:#5D5D5D;
+    --amarillo-palido-claro:#FDF9EB;
+    --fondo:#535353;
+    --gris-formulario:#e4e0d0;
+    --grupo-formulario:#827f74;
+    --blanco:white;
+    --amarillo-palido30: rgba(158, 125, 36, 0.797);
+    --amarillo-oscuro30:#62573d78;
+    --amarillo-oscuro30h:rgba(124, 116, 97, 0.355);
+
+    /* Texto */
+    --enfasis: Mark Pro;
+    --texto: Gadugi;
+    --xs:x-small;
+    --s:small;
+    --n:normal;
+    --m:medium;
+    --l:large;
+    --xl:x-large;
+    --xxl:xx-large;
+}
+.bg-img{
+    background-image: url('/src/assets/banner_ebsa.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .3;
+}
+.degradado{
+    background-image: linear-gradient(139deg, #2E291A 5%, #3E3621 26%, #61583F 44%, #DBD2BA 100%);
+   position: relative;
+   z-index: 1;
+}
+
+.primario-t{
+    color: var(--primario);
+}
+.primario-b{
+    background-color: var(--primario);
+}
+.primario-l{
+    border: 2px solid var(--primario);
+}
+.advertencia-t{
+    color: var(--advertencia);
+}
+.advertencia-b{
+    background-color: var(--advertencia);
+}
+.advertencia-l{
+    border: 2px solid var(--advertencia);
+}
+.exito-t{
+    color: var(--exito);
+}
+.exito-b{
+    background-color: var(--exito);
+}
+.exito-l{
+    border: 2px solid var(--exito);
+}
+.negro-t{
+    color: var(--negro);
+}
+.negro-b{
+    background-color: var(--negro);
+}
+.negro50-b{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.negro-l{
+    border: 2px solid var(--negro);
+}
+.gris-t{
+    color: var(--gris);
+}
+.gris-b{
+    background-color: var(--gris);
+}
+.gris-l{
+    border: 2px solid var(--gris);
+}
+.gris-claro-t{
+    color: var(--gris-claro);
+}
+.gris-claro-b{
+    background-color: var(--gris-claro);
+}
+.gris-claro-l{
+    border: 2px solid var(--gris-claro);
+}
+.gris-oscuro-t{
+    color: var(--gris-oscuro);
+}
+.gris-oscuro-b{
+    background-color: var(--gris-oscuro);
+}
+.gris-oscuro50-b{
+    background-color: #48484876;
+}
+.gris-oscuro-l{
+    border: 2px solid var(--gris-oscuro);
+}
+.gris-oscuro-claro-t{
+    color: var(--gris-oscuro-claro);
+}
+.gris-oscuro-claro-b{
+    background-color: var(--gris-oscuro-claro);
+}
+.gris-oscuro-claro-l{
+    border: 2px solid var(--gris-oscuro-claro);
+}
+.fondo-t{
+    color: var(--fondo);
+}
+.fondo-b{
+    background-color: var(--fondo);
+}
+.fondo-l{
+    border: 2px solid var(--fondo);
+}
+.gris-formulario-t{
+    color: var(--gris-formulario);
+}
+.gris-formulario-b{
+    background-color: var(--gris-formulario);
+}
+.gris-formulario-l{
+    border: 2px solid var(--gris-formulario);
+}
+.grupo-formulario-t{
+    color: var(--grupo-formulario);
+}
+.grupo-formulario-b{
+    background-color: var(--grupo-formulario);
+}
+.grupo-formulario-l{
+    border: 2px solid var(--grupo-formulario);
+}
+.amarillo-palido-t{
+    color: var(--amarillo-palido);
+}
+.amarillo-palido-b{
+    background-color: var(--amarillo-palido);
+}
+.amarillo-palido30-b{
+    background-color: var(--amarillo-palido30);
+}
+.amarillo-oscuro30-b{
+    background-color: var(--amarillo-oscuro30);
+}
+.amarillo-palido-l{
+    border: 2px solid var(--amarillo-palido);
+}
+.amarillo-palido-claro-t{
+    color: var(--amarillo-palido-claro);
+}
+.blanco-t{
+    color: var(--blanco);
+}
+.blanco-b{
+    background-color: var(--blanco);
+}
+
+.blanco-l{
+    border: 2px solid var(--blanco);
+}
+.logout{
+    background-color: var(--negro);
+    border: 1px solid rgba(255, 255, 255, 0.307);
+    color: white;
+}
+.transparente-b{
+    background-color: transparent;
+}
+.subrayado-primario{
+    text-decoration: underline 1px solid var(--primario);
+}
+.cursor-pointer:hover{
+    cursor: pointer;
+}
+
+/* Tamaños */
+.xxs {
+    font-size: 8px;
+}
+.xs {
+    font-size: x-small;
+}
+.s {
+    font-size: small;
+}
+.n {
+    font-size: normal;
+}
+.m {
+    font-size: medium;
+}
+.l {
+    font-size: large;
+}
+.xl {
+    font-size: x-large;
+}
+.xxl {
+    font-size: xx-large;
+}
+
+.a100{
+    width: 100%;
+}
+.tam100p{
+    width: 100px;
+}
+
+/* Fuentes */
+
+.enfasis{
+    font-family: var(--enfasis);
+}
+.texto{
+    font-family: var(--texto);
+}
+/* Peso fuente */
+
+.bold{
+    font-weight: bold;
+}
+.bolder{
+    font-weight: bolder;
+}
+.normal{
+    font-weight: normal;
+}
+.thin{
+    font-weight: lighter;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+/*Elementos adicionales*/
+.menu-toggle{
+    background-color:var(--amarillo-palido);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius:10px;
+    width: fit-content;
+    padding:7px;
+    position: absolute;
+    top: 20px;
+    z-index: 99999;
+    
+}
+.fondo-tarjeta{
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.4);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.4px);
+-webkit-backdrop-filter: blur(11.4px);
+}
+
+/*Modificaciones al framework*/
+
+.q-field--highlighted .q-field__label{
+    color: var(--gris) !important;
+}
+.animar-tam{
+    max-height: 500px;
+    transition:all 1s ease-out;
+}
