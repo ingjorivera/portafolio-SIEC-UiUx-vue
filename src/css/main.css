@@ -34,6 +34,9 @@
     --xl:x-large;
     --xxl:xx-large;
 }
+body{
+    background-color: black;
+}
 .bg-img{
     background-image: url('/src/assets/banner_ebsa.png');
     background-repeat: no-repeat;
@@ -278,8 +281,8 @@
 background: rgba(0, 0, 0, 0.4);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(11.4px);
--webkit-backdrop-filter: blur(11.4px);
+backdrop-filter: blur(5.4px);
+-webkit-backdrop-filter: blur(5.4px);
 }
 
 /*Modificaciones al framework*/
