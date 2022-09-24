@@ -266,7 +266,7 @@ body{
 
 /*Elementos adicionales*/
 .menu-toggle{
-    background-color:var(--amarillo-palido);
+    background-color: rgba(255, 255, 255, 0.2);
     border-bottom-right-radius: 10px;
     border-top-right-radius:10px;
     width: fit-content;
@@ -293,4 +293,10 @@ backdrop-filter: blur(5.4px);
 .animar-tam{
     max-height: 500px;
     transition:all 1s ease-out;
+}
+.siec-logo-dashboard{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    opacity: .48;
 }

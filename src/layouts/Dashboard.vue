@@ -28,6 +28,7 @@ const leftDrawerOpen = ref(false)
         <div class="menu-toggle" v-on:click="leftDrawerOpen=!leftDrawerOpen">
           <q-icon name="fas fa-bars" />
         </div>
+        <img src="../assets/logo.svg" alt="" class="siec-logo-dashboard"> 
         <router-view class="q-pa-lg" />
       </q-page-container >
       <div class="bg-img"></div>
