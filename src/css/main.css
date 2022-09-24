@@ -237,7 +237,9 @@ body{
 .tam100p{
     width: 100px;
 }
-
+.borde-15{
+    border-radius: 15px;
+}
 /* Fuentes */
 
 .enfasis{
@@ -284,6 +286,14 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.4px);
 -webkit-backdrop-filter: blur(5.4px);
 }
+.fondo-tarjeta1{
+    /* From https://css.glass */
+    background:#3e362177;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    }
 
 /*Modificaciones al framework*/
 
