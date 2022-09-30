@@ -1,14 +1,39 @@
 .sidebar-menu{
     background: transparent;
-    background-color: #40404066;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.89);
+   
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-right: .3px solid rgba(255, 255, 255, 0.2);
     border-top: .3px solid rgba(255, 255, 255, 0.2);
     border-bottom: .3px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 36px 4px #000000;
 }
 .q-drawer{
     background: transparent !important;
+}
+.scroll-menut, .scroll-menub{
+    position: relative;
+}
+.scroll-menut::before{
+    position: absolute;
+    left: calc(50% - 5px);
+    top: 5px;
+    content: '\f0d8';
+    width: 10px;
+    height: 10px;
+    color: var(--primario);
+    border-radius: 100%;
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+}
+.scroll-menub::before{
+    position: absolute;
+    left: calc(50% - 5px);
+    bottom: 15px;
+    content: '\f0d7';
+    width: 10px;
+    height: 10px;
+    color: var(--primario);
+    border-radius: 100%;
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
 }

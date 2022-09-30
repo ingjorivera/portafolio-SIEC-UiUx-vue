@@ -9,8 +9,8 @@ export default {
 }
 </script>
 <template>
-<q-card flat class="col row borde-15 fondo-tarjeta items-center" style="gap:10px">
-    <q-item>
+<q-card flat class="col row borde-15 fondo-tarjeta items-center" style="gap:10px;padding:5px;padding-left: 9px;">
+    <q-item class="q-pa-none">
         <q-item-section side>
             <q-avatar rounded :icon="icono" :color="color" text-color="white" style="border-radius: 10px;"></q-avatar>
         </q-item-section>

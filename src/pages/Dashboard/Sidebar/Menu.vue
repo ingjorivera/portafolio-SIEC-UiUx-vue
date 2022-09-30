@@ -1,8 +1,41 @@
+<script setup>
+import { ref } from 'vue';
+import BotonMenu from '../../../components/Menu/BotonMenu.vue';
+
+let objscroll=ref(null)
+function checkCaret(info){
+    let caret=document.getElementsByClassName('selector')
+    if(info.verticalPercentage===0){
+        caret[0].classList.remove('scroll-menut')
+    }
+    else if(info.verticalPercentage===1){
+        caret[1].classList.remove('scroll-menub')
+    }
+    else{
+        caret[0].classList.add('scroll-menut')
+        caret[1].classList.add('scroll-menub')
+    }
+    
+}
+</script>
 <template>
-    <div class="column q-pa-md full-height" style="gap:10px">
-        <q-separator />
-        <div class="col">sdfsdf</div>
-        <q-separator />
-        <q-btn size="sm" color="primary" text-color="black" class="text-bold">Cerrar Sesion</q-btn>
+    <div class="column  full-height q-pb-md" style="gap:10px; padding-left:10px; padding-right:10px">
+        
+        <q-separator  class="gris-oscuro-b selector scroll-menut q-pl-md" size="2px"/>
+        <q-scroll-area ref="objscroll" class=" col row mascara-scroll " @scroll="checkCaret" :bar-style="{opacity:0,width:'1px'}" :thumb-style="{opacity:0, width:'0px'}" >
+            <boton-menu></boton-menu>
+            <boton-menu></boton-menu>
+            <boton-menu></boton-menu>
+            <boton-menu></boton-menu>
+            <boton-menu></boton-menu>
+            <boton-menu></boton-menu>
+            <boton-menu></boton-menu>
+            <boton-menu></boton-menu>
+            <boton-menu></boton-menu>
+            <boton-menu></boton-menu>
+                  
+        </q-scroll-area>
+        <q-separator  class="gris-oscuro-b selector scroll-menub" size="2px"/>
+        <q-btn size="sm" color="primary" text-color="black" class="text-bold q-pa-xs q-mt-sm q-mb-sm">Cerrar Sesion</q-btn>
     </div>
 </template>

@@ -13,7 +13,7 @@ const leftDrawerOpen = ref(false)
 <template>
     <q-layout view="hHh lpR fFf" class="degradado">
   
-      <q-drawer show-if-above v-model="leftDrawerOpen" side="left"  width=180 class="sidebar-menu">
+      <q-drawer show-if-above v-model="leftDrawerOpen" side="left"  width=126 class="sidebar-menu">
         <div class="full-height column">
           <div class=" full-width">
             <User></User>

@@ -115,10 +115,10 @@ body{
     border: 2px solid var(--gris-claro);
 }
 .gris-oscuro-t{
-    color: var(--gris-oscuro);
+    color: var(--gris-oscuro) !important;
 }
 .gris-oscuro-b{
-    background-color: var(--gris-oscuro);
+    background-color: var(--gris-oscuro) !important;
 }
 .gris-oscuro50-b{
     background-color: #48484876;
@@ -280,20 +280,94 @@ body{
 }
 .fondo-tarjeta{
 /* From https://css.glass */
-background: rgba(0, 0, 0, 0.4);
+background: rgba(0, 0, 0, 0.6);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.4px);
--webkit-backdrop-filter: blur(5.4px);
+/* backdrop-filter: blur(5.4px);
+-webkit-backdrop-filter: blur(5.4px); */
 }
 .fondo-tarjeta1{
     /* From https://css.glass */
-    background:#3e362177;
+    background:#3e3621ab;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.4px);
-    -webkit-backdrop-filter: blur(5.4px);
+    /* backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px); */
     }
+.fondo-icono-linea-dashboard{
+    font-size: 15px;
+   
+    line-height: 38px;
+}
+.fondo-icono-dashboard{
+    text-align: center;
+    float: left;
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+.q-scrollarea__container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+--mask-height:20px;
+--scrollbar-width:50px;
+--mask-image-scrollbar: linear-gradient(black, black);
+--mask-image-content: linear-gradient(
+        to bottom,
+        transparent,
+        black var(--mask-height),
+        black calc(100% - var(--mask-height)),
+        transparent
+    );
+--mask-size-content:calc(100% - var(--scrollbar-width)) 100%;
+--mask-size-scrollbar:var(--scrollbar-width) 100%;
+    -webkit-mask-image: var(--mask-image-content);
+    -webkit-mask-size: var(--mask-size-content);
+    mask-size:  var(--mask-size-content), var(--mask-size-scrollbar);
+}
+.menu-tail::before{
+    content: '';
+    position: absolute;
+    
+    width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 10px 5px 0;
+border-color: transparent rgba(255, 255, 255, 0.656) transparent transparent;
+    left: -10px;
+    top: 15px;
+}
+.menu-tail{
+    overflow: visible;
+}
+.submenu{
+    border: 1px solid rgba(255, 255, 255, 0.161);
+    background: rgba(30, 30, 30, 0.456);
+   
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.submenu .q-item{
+    border-radius: 5px;
+    background-color: var(--amarillo-palido30);
+    color: white;
+}
+.submenu .q-expansion-item__content{
+    
+}
+.submenu .q-expansion-item__toggle-icon{
+    font-size:small;
+}
+.subitems .q-hoverable:hover > .q-focus-helper {
+    
+
+    background: #000000 !important;
+    opacity: .6 !important;
+}
+.subitems .q-focus-helper:after{
+    display: none;
+}
 
 /*Modificaciones al framework*/
 
