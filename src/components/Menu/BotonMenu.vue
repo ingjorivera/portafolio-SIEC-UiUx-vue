@@ -1,24 +1,29 @@
 <script setup>
-    import { ref } from 'vue';
-   let control=ref(false)
-    let btn2=ref(false)
-    function close () {
+  import { ref } from 'vue';
+  let control=ref(false)
+  let btn2=ref(false)
+  function close () {
       btn2.value=false
       control.value=false
-    }
-    </script>
+  }
+  const props = defineProps({
+  titulo: String,
+  icono:String,
+  subitems:Array,
+  })
+</script>
 <template>
     
     <q-scroll-observer @scroll="close" />
-    <q-btn :ripple="false"  flat class="amarillo-palido-t row  q-mb-md q-pa-sm justify-center items-center" style="min-height: 100px; border-radius: 10px;" :loading="btn2" v-on:click="btn2=true">
+    <q-btn :ripple="false"  flat class="amarillo-palido-t column  q-mb-md q-pa-sm justify-center items-center" style="min-height: width:100%; 100px; border-radius: 10px;" :loading="btn2" v-on:click="btn2=true">
       <template v-slot:loading class="">
-        <q-card class="col row bg-primary q-pa-sm  justify-center items-center" style="min-height: 100px; border-radius: 10px;">
-            <q-icon name="fas fa-cogs" color="black" size="sm"/>
-            <div class="text-bold text-center enfasis xxs text-black" style=" line-height: 13px;">Parametrizacion Sistema</div>
+        <q-card class="col column bg-primary q-pa-sm  justify-center items-center" style="min-height: 100px; width:100%; border-radius: 10px;">
+            <q-icon :name="icono" color="black" size="sm"/>
+            <div class="text-bold text-center enfasis xxs text-black" style=" line-height: 13px;">{{titulo}}</div>
         </q-card>
       </template>
-       <q-icon name="fas fa-cogs" size="sm"/>
-       <div class="text-bold text-center enfasis xxs" style=" line-height: 13px;">Parametrizacion Sistema</div>
+       <q-icon :name="icono" size="sm"/>
+       <div class="text-bold text-center enfasis xxs" style=" line-height: 13px;">{{titulo}}</div>
        <q-menu
           v-model="control"
           :offset="[-120, -100]"

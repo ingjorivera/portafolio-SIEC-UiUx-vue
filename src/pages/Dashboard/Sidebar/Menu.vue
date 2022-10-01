@@ -1,7 +1,11 @@
 <script setup>
+import { useMenuStore } from '../../../stores/menu';
 import { ref } from 'vue';
 import BotonMenu from '../../../components/Menu/BotonMenu.vue';
 
+const menu=useMenuStore()
+
+//Indicadores de menu
 let objscroll=ref(null)
 function checkCaret(info){
     let caret=document.getElementsByClassName('selector')
@@ -23,16 +27,11 @@ function checkCaret(info){
         
         <q-separator  class="gris-oscuro-b selector scroll-menut q-pl-md" size="2px"/>
         <q-scroll-area ref="objscroll" class=" col row mascara-scroll " @scroll="checkCaret" :bar-style="{opacity:0,width:'1px'}" :thumb-style="{opacity:0, width:'0px'}" >
-            <boton-menu></boton-menu>
-            <boton-menu></boton-menu>
-            <boton-menu></boton-menu>
-            <boton-menu></boton-menu>
-            <boton-menu></boton-menu>
-            <boton-menu></boton-menu>
-            <boton-menu></boton-menu>
-            <boton-menu></boton-menu>
-            <boton-menu></boton-menu>
-            <boton-menu></boton-menu>
+            <template v-for="(item,index) in menu.items">
+                <boton-menu :titulo="item.titulo" :icono="item.icono" ></boton-menu>
+            </template>
+            
+            
                   
         </q-scroll-area>
         <q-separator  class="gris-oscuro-b selector scroll-menub" size="2px"/>
