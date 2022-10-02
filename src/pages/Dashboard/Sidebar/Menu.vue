@@ -28,7 +28,7 @@ function checkCaret(info){
         <q-separator  class="gris-oscuro-b selector scroll-menut q-pl-md" size="2px"/>
         <q-scroll-area ref="objscroll" class=" col row mascara-scroll " @scroll="checkCaret" :bar-style="{opacity:0,width:'1px'}" :thumb-style="{opacity:0, width:'0px'}" >
             <template v-for="(item,index) in menu.items">
-                <boton-menu :titulo="item.titulo" :icono="item.icono" ></boton-menu>
+                <boton-menu :titulo="item.titulo" :icono="item.icono" :subitems="item.subItems" ></boton-menu>
             </template>
             
             
