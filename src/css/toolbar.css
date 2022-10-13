@@ -1,0 +1,62 @@
+.toolbar-open{
+    width: calc((100% / 12) * 12);
+}
+.toolbar-close{
+    width: calc((100vw / 12) * 2);
+}
+.boton_toolbar_select{
+    background:radial-gradient(124% 4844.65% at -50% 27.94%, #FFC629 0%, #000000 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 0px !important;
+    border-bottom-left-radius: 40px !important;
+    border-top-left-radius: 40px !important;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    padding-right: 15px;
+    position:relative;
+    transition: color .3s ease-in;
+}
+.boton_toolbar_select::after{
+    content: '';
+    background-color:var(--gris-formulario);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    border-top-right-radius: 10px;
+    -webkit-box-shadow: 2px -2px 0px 2px rgb(0, 0, 0);
+    -moz-box-shadow: 2px -2px 0px 2px rgb(0, 0, 0);
+    box-shadow: 2px -2px 0px 2px rgb(0, 0, 0);
+    
+    
+}
+.boton_toolbar_select::before{
+    content: '';
+    background-color:var(--gris-formulario);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 2px 2px 0px 2px rgb(0, 0, 0);
+-moz-box-shadow: 2px 2px 0px 2px rgb(0, 0, 0);
+box-shadow: 2px 2px 0px 2px rgb(0, 0, 0);
+
+    
+}
+.boton_toolbar{
+    background-color: transparent;
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+.boton_toolbar:hover{
+    background-color: var(--amarillo-oscuro30);
+    width: calc(100% - 5px) !important;
+    padding-right: 0px !important;
+    border-radius: 5px;
+}

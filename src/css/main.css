@@ -17,6 +17,7 @@
     --amarillo-palido-claro:#FDF9EB;
     --fondo:#535353;
     --gris-formulario:#e4e0d0;
+    --gris-formulario-oscuro:#c4c1b3;
     --grupo-formulario:#827f74;
     --blanco:white;
     --amarillo-palido30: rgba(158, 125, 36, 0.797);
@@ -147,6 +148,12 @@ body{
 .gris-formulario-t{
     color: var(--gris-formulario);
 }
+.gris-formulario-oscuro-t{
+    color: var(--gris-formulario-oscuro);
+}
+.gris-formulario-oscuro-b{
+    color: var(--gris-formulario-oscuro);
+}
 .gris-formulario-b{
     background-color: var(--gris-formulario);
 }
@@ -171,6 +178,10 @@ body{
 .amarillo-palido30-b{
     background-color: var(--amarillo-palido30);
 }
+.amarillo-palido30-t{
+    color: var(--amarillo-palido30);
+}
+
 .amarillo-oscuro30-b{
     background-color: var(--amarillo-oscuro30);
 }
@@ -179,6 +190,9 @@ body{
 }
 .amarillo-palido-claro-t{
     color: var(--amarillo-palido-claro);
+}
+.amarillo-oscuro30h-b{
+    background-color: var(--amarillo-oscuro30h);
 }
 .blanco-t{
     color: var(--blanco);
@@ -286,6 +300,15 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 /* backdrop-filter: blur(5.4px);
 -webkit-backdrop-filter: blur(5.4px); */
 }
+.fondo-select{
+   
+background: rgba(0, 0, 0, 0.6);
+border-radius: 7px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.4px);
+-webkit-backdrop-filter: blur(5.4px);
+color: white;
+}
 .fondo-tarjeta1{
     /* From https://css.glass */
     background:#3e3621ab;
@@ -326,27 +349,14 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     -webkit-mask-size: var(--mask-size-content);
     mask-size:  var(--mask-size-content), var(--mask-size-scrollbar);
 }
-.menu-tail::before{
-    content: '';
-    position: absolute;
-    
-    width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 10px 5px 0;
-border-color: transparent rgba(255, 255, 255, 0.656) transparent transparent;
-    left: -10px;
-    top: 15px;
-}
-.menu-tail{
-    overflow: visible;
-}
+
+
 .submenu{
     border: 1px solid rgba(255, 255, 255, 0.161);
-    background: rgba(30, 30, 30, 0.456);
+    background: rgba(30, 30, 30, 0.6);
    
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 .submenu .q-item{
     border-radius: 5px;

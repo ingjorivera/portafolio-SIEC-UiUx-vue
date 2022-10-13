@@ -31,6 +31,52 @@ const routes=[
             {
                 path:'principal',
                 component:() => import('./pages/Dashboard/Principal.vue')
+            },
+            {
+                path:'consulta-clientes',
+                component:() => import('./pages/Dashboard/ConsultaClientes.vue'),
+                children:[
+                    {
+                        path:'facturas',
+                        component:() => import ('./pages/Dashboard/ConsultaClientes/Facturas.vue')
+                    },
+                    {
+                        path:'consumos',
+                        component:() => import ('./pages/Dashboard/ConsultaClientes/Consumos.vue')
+                    },
+                    {
+                        path:'pagos',
+                        component:() => import ('./pages/Dashboard/ConsultaClientes/Pagos.vue')
+                    },
+                    {
+                        path:'cargos',
+                        component:() => import ('./pages/Dashboard/ConsultaClientes/Cargos.vue')
+                    },
+                    {
+                        path:'financiaciones',
+                        component:() => import ('./pages/Dashboard/ConsultaClientes/Financiaciones.vue')
+                    },
+                    {
+                        path:'gestion-cartera',
+                        component:() => import ('./pages/Dashboard/ConsultaClientes/GestionCartera.vue')
+                    },
+                    {
+                        path:'compensaciones',
+                        component:() => import ('./pages/Dashboard/ConsultaClientes/Compensaciones.vue')
+                    },
+                    {
+                        path:'ajuste-periodos',
+                        component:() => import ('./pages/Dashboard/ConsultaClientes/AjustePeriodos.vue')
+                    },
+                    {
+                        path:'solicitudes',
+                        component:() => import ('./pages/Dashboard/ConsultaClientes/Solicitudes.vue')
+                    },
+                    {
+                        path:'imprimir',
+                        component:() => import ('./pages/Dashboard/ConsultaClientes/Imprimir.vue')
+                    }
+                ]
             }
         ]
     }

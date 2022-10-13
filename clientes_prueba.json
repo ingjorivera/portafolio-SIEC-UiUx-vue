@@ -1,0 +1,69 @@
+{
+    "resultado":[
+        {
+            "label":"Sec. impresion",
+            "valores":[
+                {
+                    "valor":"001021451"
+                }
+            ]
+        },
+        {
+            "label":"No Factura",
+            "valores":[
+                {
+                    "valor":"0034566774"
+                }
+            ]
+        },
+        {
+            "label":"Telefono",
+            "valores":[
+                {
+                    "valor":"3155647795"
+                }
+            ]
+        },
+        {
+            "label":"Correo electronico",
+            "valores":[
+                {
+                    "valor":"correo@correo.com"
+                }
+            ]
+        },
+        {
+            "label":"Departamento",
+            "valores":[
+                {
+                    "valor":"asdfg"
+                },
+                {
+                    "valor":"12345"
+                }
+            ]
+        },
+        {
+            "label":"Municipio",
+            "valores":[
+                {
+                    "valor":"asdfg"
+                },
+                {
+                    "valor":"12345"
+                }
+            ]
+        },
+        {
+            "label":"Direccion de cuenta",
+            "valores":[
+                {
+                    "valor":"asdfg"
+                },
+                {
+                    "valor":"12345"
+                }
+            ]
+        }
+    ]
+}

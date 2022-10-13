@@ -1,7 +1,7 @@
 // FILE: main.js
 
 import { createApp } from 'vue'
-import { Quasar } from 'quasar'
+import { Quasar, Notify } from 'quasar'
 import quasarLang from 'quasar/lang/es'
 import quasarIconSet from 'quasar/icon-set/fontawesome-v5'
 import { createPinia } from 'pinia'
@@ -15,6 +15,9 @@ import 'quasar/src/css/index.sass'
 //Import animation library
 import { MotionPlugin } from '@vueuse/motion'
 
+import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
+
+
 // Assumes your root component is App.vue
 // and placed in same folder as main.js
 import App from './App.vue'
@@ -23,13 +26,16 @@ const myApp = createApp(App)
 const pinia=createPinia()
 
 myApp.use(Quasar, {
-  plugins: {}, // import Quasar plugins and add here
+  plugins: {
+    Notify
+  }, // import Quasar plugins and add here
   lang: quasarLang,
   iconSet: quasarIconSet,
 })
 myApp.use(pinia)
 myApp.use(router)
 myApp.use(MotionPlugin)
+myApp.use(autoAnimatePlugin)
 myApp.use(VueApexCharts)
 
 // Assumes you have a <div id="app"></div> in your index.html

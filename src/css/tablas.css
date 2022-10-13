@@ -1,0 +1,28 @@
+.cabecera-sticky .q-table__top, thead tr:first-child th{
+ background-color:var(--gris-formulario);
+border-right: 1px solid var(--gris-formulario-oscuro);
+color: var(--amarillo-oscuro30);
+}
+
+.cabecera-sticky thead tr th{
+position: sticky;
+z-index: 1;
+}
+.cabecera-sticky thead tr:first-child th{
+top: 0
+}
+.fondo-tabla-sel{
+    position: relative;
+}
+.fondo-tabla-sel::after{
+    content: '';
+    background-color: var(--amarillo-palido);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    z-index: -1;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    
+}

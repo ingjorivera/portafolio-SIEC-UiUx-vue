@@ -1,0 +1,26 @@
+.notificacion{
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    background: rgba(30, 30, 30, 0.6) !important;
+   border-radius: 10px!important;
+   
+   
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    padding-bottom:15px !important
+}
+.notificacion::before{
+    
+    content: attr(date) ' ' attr(time);
+    position: absolute;
+    height: 20px;
+    bottom: 0px;
+    right: 10px;
+    font-size: xx-small;
+}
+.notificacion .q-notification__message{
+    font-weight: bold;
+}
+.notificacion .q-notification__caption{
+    font-weight: normal;
+    font-family: var(--texto);
+}

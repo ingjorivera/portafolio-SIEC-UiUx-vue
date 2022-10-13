@@ -1,13 +1,15 @@
 <script setup>
+  import { useQuasar } from 'quasar'
   import User from '../pages/Dashboard/Sidebar/User.vue'
   import Menu from '../pages/Dashboard/Sidebar/Menu.vue'
   import '../css/menu.css'
   import { ref } from 'vue'
     
 //revisa si el usuario inicio sesion, sino devolver al login
-
+let notificaciones = ref(false)
   
 const leftDrawerOpen = ref(false)
+
     
 </script>
 <template>
@@ -33,6 +35,7 @@ const leftDrawerOpen = ref(false)
       </q-page-container >
       <div class="bg-img"></div>
     </q-layout>
+   
   </template>
   
  
